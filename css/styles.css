@@ -56,6 +56,30 @@ a:hover {
   font-family: var(--font-family);
 }
 /* Header Section*/
+@media screen and (min-width:428px) {
+  .header-container {
+    height: 72px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+  .web-studio {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+    display: flex;
+    justify-content: flex-start;
+}
+
+}
+
+
+
 .main-nav a.active {
   border-bottom: 4px solid #404bbf;
   padding-bottom: 44px;
