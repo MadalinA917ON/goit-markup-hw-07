@@ -16,10 +16,60 @@
 </head>
 
 <body>
+    <div class="js-menu-container">
+        <button class="menu-toggle js-close-menu"> &times;
+        </button>
+        <nav class="-mobile-nav-bar">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html" class="active">Studio</a></li>
+                <li><a href="portofolio.html">Portofolio</a> </li>
+                <li><a href="contacts.html">Contacts</a> </li>
+            </ul>
+        </nav>
+        <div class="mobile-footer">
+            <ul class="mobile-contact">
+                <li><a href="mailto:info@devstudio.com" class="mail-phone">info@devstudio.com</a></li>
+                <li><a href="tel:+11(000)111-11-11" class="phone-mobile">+11 (000) 111-11-11</a></li>
+            </ul>
+            <div class="social-media social-media-phone">
+                <a href="https://instagram.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
+                    aria-label="Instagram-link">
+                    <svg>
+                        <use href="./svg/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
+                    aria-label="Twitter-link">
+                    <svg>
+                        <use href="./svg/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+
+                <a href="https://facebook.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
+                    aria-label="Facebook-link">
+                    <svg>
+                        <use href="./svg/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+
+                <a href="https://linkedin.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
+                    aria-label="Linkedin-link">
+                    <svg>
+                        <use href="./svg/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
     <!-- Header section -->
     <header class="global-header">
         <div class="container">
             <a href="index.html" class="logo">STUDIO</a>
+            <a><svg class="burger-menu js-open-menu">
+                    <use href="./svg/menu.svg#icon-menu"></use>
+                </svg>
+            </a>
             <nav class="nav-bar">
                 <ul class="nav-list">
                     <li><a href="index.html" class="active">Studio</a></li>
@@ -346,61 +396,67 @@
     </main>
     <!-- Footer section -->
     <footer class="footer">
-        <div class="container">
-            <a href="index.html" class="logo-footer">STUDIO</a>
-            <address class="address">Increase the flow of customers and <br> sales for your business with digital <br>
-                marketing & growth solutions.
-            </address>
-        </div>
-        <div class="container">
-            <h4>Social media</h4>
-            <div class="social-media-footer">
-                <a href="https://instagram.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
-                    aria-label="Instagram-link">
-                    <svg>
-                        <use href="./svg/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-                <a href="https://twitter.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
-                    aria-label="Twitter-link">
-                    <svg>
-                        <use href="./svg/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-
-                <a href="https://facebook.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
-                    aria-label="Facebook-link">
-                    <svg>
-                        <use href="./svg/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-
-                <a href="https://linkedin.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
-                    aria-label="Linkedin-link">
-                    <svg>
-                        <use href="./svg/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                </a>
+        <div class="wrap-footer">
+            <div class="container">
+                <a href="index.html" class="logo-footer">STUDIO</a>
+                <address class="address">Increase the flow of customers and <br> sales for your business with digital
+                    <br>
+                    marketing & growth solutions.
+                </address>
             </div>
-        </div>
-        <div class="container">
-            <div class="subscribe-footer">
 
-                <form class="position-mail">
-                    <span class="subscribe-bottom">Subscribe</span>
-                    <label class="footer-email">
-                        <input type="text" name="email" required class="mail-style" placeholder="E-mail">
-                        <button type="submit" class="sub-btn">Subscribe
-                            <svg class="send">
-                                <use href="./svg/send-mail.svg#icon-send-mail"></use>
-                            </svg>
-                        </button>
-                    </label>
-                </form>
+            <div class="container">
+                <h4 class="footer-h4">Social media</h4>
+                <div class="social-media-footer">
+                    <a href="https://instagram.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
+                        aria-label="Instagram-link">
+                        <svg>
+                            <use href="./svg/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
+                        aria-label="Twitter-link">
+                        <svg>
+                            <use href="./svg/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://facebook.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
+                        aria-label="Facebook-link">
+                        <svg>
+                            <use href="./svg/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://linkedin.com" class="icon" target="_blank" rel="noopener noreferrer nofollow"
+                        aria-label="Linkedin-link">
+                        <svg>
+                            <use href="./svg/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="subscribe-footer">
+                    <form class="position-mail">
+                        <span class="subscribe-bottom">Subscribe</span>
+                        <div class="sub-footer">
+                            <label class="footer-email">
+                                <input type="text" name="email" required class="mail-style" placeholder="E-mail">
+                                <button type="submit" class="sub-btn">Subscribe
+                                    <svg class="send">
+                                        <use href="./svg/send-mail.svg#icon-send-mail"></use>
+                                    </svg>
+                                </button>
+                            </label>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
